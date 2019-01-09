@@ -17,9 +17,7 @@ Especially we plot data obtained from 24 millions loans from [LendingClub](http:
 
 Results indicates that *Redlining* is likely to still taking place today.
 
-**Artifact:**
-
-![a gif of my submission](animation.gif)
+**Artifact:** *![a gif of my submission](michelkana_artifact.gif)*
  
 **Code:** *[link to code file](michelkana_code.ipynb)*
 
@@ -137,14 +135,14 @@ The hotspots of HOLC redlining back in 1930s can be seen below [(source)](https:
 
 ![Place of lending discrimation in 1930s](img/MappingInequality.png)
 
-We reproduce the HOLC map below.
+We reproduced the HOLC map below.
 
 ![Place of lending discrimation in 1930s](img/holc_us_map.png)
 
 
-**Effect of HOLC redlining on today's LendingClub rejects and interest rate**
+### Effect of HOLC redlining on today's LendingClub rejects and interest rate
 
-We generate a map for each quarter starting from the time when LendingClub started sharing loan data in 2007Q2, up to 2018Q2.
+We generated a map for each quarter starting from the time when LendingClub started sharing loan data in 2007Q2, up to 2018Q2.
 
 * map layer 0: US baseline states' map - **light blue shapes** showing US states,
 * map layer 1: HOLC redlining map - **red circles** showing places where the most redlining happened in 1930s,
@@ -153,27 +151,32 @@ We generate a map for each quarter starting from the time when LendingClub start
 
 The maps can be interpreted as follows:
 
-**green** is an indicator of very high reject ratio by LendingClub (>90%).
+* **green** is an indicator of very high reject ratio by LendingClub (>90%).
 
-**dark violet** is an indicator of strong correlation between HOLC redlining and LendingClub rejects. Violet color is obtained when the red shape (from HOLC) is overlayed by the green shape (from LendingClub).
+* **dark violet** is an indicator of strong correlation between HOLC redlining and LendingClub rejects. Violet color is obtained when the red shape (from HOLC) is overlayed by the green shape (from LendingClub).
 
-**dark magenta** is an indicator of strong correlation between HOLC redlining and LendingClub high interest rate.
+* **dark magenta** is an indicator of strong correlation between HOLC redlining and LendingClub high interest rate.
+
 
 Around 2007 we can see a correlation between zones where a high number of rejects were recorded and former HOLC redlining zones.
 
 ![red - HOLC redlining zones, green - LendingClub high reject zones, magenta - LendingClub high interest rate zones](maps/2007Q2_loans_reject_ratio.png)
 
+
 A year later, in 2008, rejects become more spread outside the HOLC zones. But HOLC zones remains those with higher interest rates.
 
 ![red - HOLC redlining zones, green - LendingClub high reject zones, magenta - LendingClub high interest rate zones](maps/2008Q2_loans_reject_ratio.png)
+
 
 After 2012Q1 we cannot see any clear link between HOLC and LendingClub anymore. There are more rejects, but they are found in almost all states.
 
 ![red - HOLC redlining zones, green - LendingClub high reject zones, magenta - LendingClub high interest rate zones](maps/2012Q1_loans_reject_ratio.png)
 
+
 As the LendingClub is gaining more marketshare, we can see its activities equally distributed accross the US, as shown in this 2016Q3 map. 
 
 ![red - HOLC redlining zones, green - LendingClub high reject zones, magenta - LendingClub high interest rate zones](maps/2016Q3_loans_reject_ratio.png)
+
 
 HOLC redlining seems to be forgotten and not affecting any LendingClub statistics, when looking at the 2018Q2 map. 
 
@@ -181,7 +184,7 @@ HOLC redlining seems to be forgotten and not affecting any LendingClub statistic
 
 ## Conclusion
 
-[Modern redlining](https://www.revealnews.org/article/for-people-of-color-banks-are-shutting-the-door-to-homeownership/) has been exposed [recently] in 61 US cities(https://www.revealnews.org/blog/we-exposed-modern-day-redlining-in-61-cities-find-out-whats-happened-since/).
+[Modern redlining](https://www.revealnews.org/article/for-people-of-color-banks-are-shutting-the-door-to-homeownership/) has been exposed [recently in 61 US cities](https://www.revealnews.org/blog/we-exposed-modern-day-redlining-in-61-cities-find-out-whats-happened-since/).
 Another investigation identified a [couple of banks](https://www.revealnews.org/article/8-lenders-that-arent-serving-people-of-color-for-home-loans/) which appearently exclude some minorities from their clients' portforlio.
 More can be found about [specific cases](https://www.revealnews.org/blog/3-investigations-opened-after-reveal-uncovers-redlining-in-philly/) at court.
 
@@ -189,9 +192,9 @@ Our study does not provide solid evidence of racial discrimination by the Lendin
 
 There are however some signs of unfair algorithms or historical bias in data used at LendingClub, looking at our exploratory data analysis. Several questions arize and can be subject of deeper investigation:
 
-* **Does the data used by the LendingClub contain some kind of bias colinear to HOLC redlining, e.g. FICO score, employment length, race.?
-* **In which extend does the zipcode affect LendingClub decisions?
-* **Which adjustments in risk assessement algorithms are necessary to take into account the HOLC redlining, which obviously does not belong to the past?
+* **Does the data used by the LendingClub contain some kind of bias colinear to HOLC redlining, e.g. FICO score, employment length, race.?**
+* **In which extend does the zipcode affect LendingClub decisions?**
+* **Which adjustments in risk assessement algorithms are necessary to take into account the HOLC redlining, which obviously does not belong to the past?**
 
 The overall **datascience process** as taught in the Harvard FAS CS109a Introduction to Data Science course is an iterrative process where more questions are disclosed. 
 

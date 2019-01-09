@@ -156,7 +156,7 @@ There are fewer applicants who received high interest rates (F, G) in redlined z
 
 The hotspots of HOLC redlining back in 1930s can be seen below [(source)](https://dsl.richmond.edu/panorama/redlining)
 
-![Place of lending discrimation in 1930s](img/MappingInequality.png)
+![Place of lending discrimation in 1930s](img/MappingInequality.png.PNG)
 
 
 

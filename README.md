@@ -6,6 +6,8 @@
 
 ## Motivation
 
+This project was conducted in January 2019 as contribution to the Harvard Data Science Animation Contest. We have chosen to demonstrate a datascience concept using a practical and current example.
+
 Between 1935 and 1940, New Deal's most important agencies, the Home Owners' Loan Corporation or HOLC (pronounced "holk").
 recruited mortgage lenders, developers, and real estate appraisers in nearly 250 cities to create maps that color-coded credit worthiness and risk on neighborhood and metropolitan levels. 
 
@@ -24,7 +26,7 @@ Results indicates that *Redlining* is likely to still taking place today.
 ![a gif of my submission](michelkana_artifact.gif)
 
 
-Maps with full resolution are [here](maps/maps_full_resolution)
+Maps with full resolution are [here](maps/maps_full_resolution).
 
  
 **Code:** *[link to code file](michelkana_code.ipynb)*
@@ -62,7 +64,7 @@ The ratios were further averaged per zipcode.
 
 ### Obtaining loan data
 
-The loan data was downloaded from LendingClub website.
+The loan data was downloaded from LendingClub website and cleaned up as recommended [here](https://sites.google.com/view/cs109alendingclubgroup26fall18).
 
 We calculated new statistics such as **LendingClub loan reject ratio** (the percentage of loan requests which were rejected per zipcode), **LendingClub loan grade ratio** (the percentage of loans which received a specific interest rate per zipcode).
 
@@ -185,25 +187,25 @@ The maps can be interpreted as follows:
 
 Around 2007 we can see a correlation between zones where a high number of rejects were recorded and former HOLC redlining zones.
 
-![red - HOLC redlining zones, green - LendingClub high reject zones, magenta - LendingClub high interest rate zones](maps/maps_full_resolution/2007Q2_loans_reject_ratio.png)
+![red - HOLC redlining zones, green - LendingClub high reject zones, magenta - LendingClub high interest rate zones](maps/maps_full_resolution/2007Q2_loans_reject_ratio.jpg)
 
 
 
 A year later, in 2008, rejects become more spread outside the HOLC zones. But HOLC zones remains those with higher interest rates.
 
-![red - HOLC redlining zones, green - LendingClub high reject zones, magenta - LendingClub high interest rate zones](maps/maps_full_resolution/2008Q2_loans_reject_ratio.png)
+![red - HOLC redlining zones, green - LendingClub high reject zones, magenta - LendingClub high interest rate zones](maps/maps_full_resolution/2008Q2_loans_reject_ratio.jpg)
 
 
 
 After 2012Q1 we cannot see any clear link between HOLC and LendingClub anymore. There are more rejects, but they are found in almost all states.
 
-![red - HOLC redlining zones, green - LendingClub high reject zones, magenta - LendingClub high interest rate zones](maps/maps_full_resolution/2012Q1_loans_reject_ratio.png)
+![red - HOLC redlining zones, green - LendingClub high reject zones, magenta - LendingClub high interest rate zones](maps/maps_full_resolution/2012Q1_loans_reject_ratio.jpg)
 
 
 
 As the LendingClub is gaining more marketshare, we can see its activities equally distributed accross the US, as shown in this 2016Q3 map. 
 
-![red - HOLC redlining zones, green - LendingClub high reject zones, magenta - LendingClub high interest rate zones](maps/maps_full_resolution/2016Q3_loans_reject_ratio.png)
+![red - HOLC redlining zones, green - LendingClub high reject zones, magenta - LendingClub high interest rate zones](maps/maps_full_resolution/2016Q3_loans_reject_ratio.jpg)
 
 
 

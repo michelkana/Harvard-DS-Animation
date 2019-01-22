@@ -228,11 +228,11 @@ More can be found about [specific cases](https://www.revealnews.org/blog/3-inves
 
 Our study does not provide solid evidence of racial discrimination by the LendingClub. The hypothesis of existing correlation between 1930's redlining and today's LedingClub policies for accepting loan requests and assessing risks of default remains to be verified. 
 
-There are however some signs of unfair algorithms or historical bias in data used at LendingClub, looking at our exploratory data analysis. Several questions arize and can be subject of deeper investigation:
+There are however some signs of unfair algorithms or historical bias in data used at LendingClub, looking at our exploratory data analysis. Several questions arise which can be subject of deeper investigation:
 
-* **Does the data used by the LendingClub contain some kind of bias colinear to HOLC redlining, e.g. FICO score, employment length, race.?**
+* **Does the data used by the LendingClub contain some kind of bias collinear to HOLC redlining, e.g. FICO score, employment length, race.?**
 * **In which extend does the zipcode affect LendingClub decisions?**
-* **Which adjustments in risk assessement algorithms are necessary to take into account the HOLC redlining, which obviously does not belong to the past?**
+* **Which adjustments in risk assessment algorithms are necessary to take into account the HOLC redlining, which obviously does not belong to the past?**
 
 The overall **datascience process** as taught in the Harvard FAS CS109a Introduction to Data Science course is an iterrative process where more questions are disclosed. 
 
